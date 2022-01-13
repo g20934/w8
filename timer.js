@@ -10,14 +10,14 @@ function showPassage() {
 // 繰り返し処理の開始
 function startShowing() {
    PassSec = 0;   // カウンタのリセット
-   PassageID = setInterval('showPassage()',1000);   // タイマーをセット(1000ms間隔)
+   PassageID = setInterval('showPassage()',1000);   // タイマーをセット(1000ms間隔)タイマーを利用している
    document.getElementById("startcount").disabled = true;   // 開始ボタンの無効化
 }
  
 // 繰り返し処理の中止
 function stopShowing() {
-   clearInterval( PassageID );   // タイマーのクリア
-   document.getElementById("startcount").disabled = false;   // 開始ボタンの有効化
+   clearInterval( PassageID );   // タイマーのクリア 登録を外す(showPassage
+   document.getElementById("startcount").disabled = false;   // 開始ボタンの有効化←無効化をfalse
 }
 
 let button1 = document.getElementById('startcount');
