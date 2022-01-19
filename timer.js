@@ -16,7 +16,7 @@ function startShowing() {
  
 // 繰り返し処理の中止
 function stopShowing() {
-   clearInterval( PassageID );   // タイマーのクリア 登録を外す(showPassage
+   clearInterval( PassageID );   // タイマーのクリア 登録を外す(showPassageをもう呼ばないでね　という意味）
    document.getElementById("startcount").disabled = false;   // 開始ボタンの有効化←無効化をfalse
 }
 
